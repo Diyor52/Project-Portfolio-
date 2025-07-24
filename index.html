@@ -1,41 +1,165 @@
-<!DOCTYPE html>
-<html>
 <head>
-    <title>My Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title><!--Title here-->
     <style>
-        body { font-family: 'Times New Roman', Times, serif; max-width: 800px; margin: 0 auto; padding: 20px; }
-        .project { border: 1px solid #fff; padding: 15px; margin-bottom: 20px; border-radius: 5px; }
-        .project h2 { margin-top: 0; }
-    </style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --accent: #4895ef;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #4cc9f0;
+            --warning: #f72585;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        h1 {
+            text-align: center;
+            color: var(--warning);
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+        }
+        
+        .project {
+            background: white;
+            border-left: 5px solid var(--accent);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project p{
+            color: var(--primary);
+            font-weight: 350;
+
+        }
+        .project h2 {
+            color: var(--warning);
+            margin-top: 0;
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        
+        .project h3 {
+            color: var(--secondary);
+            margin-top: 5px;
+            font-size: 1.4rem;
+        }
+        
+        .project-links {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .project-links a {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        
+        .project-links a:hover {
+            background-color: var(--secondary);
+            transform: translateY(-2px);
+        }
+        
+        .project-links a:nth-child(1) { background-color: var(--success); }
+        .project-links a:nth-child(2) { background-color: #6c757d; }
+        .project-links a:nth-child(3) { background-color: var(--warning); }
+        .project-links a:nth-child(4) { background-color: #ff9f1c; }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: var(--dark);
+            color: white;
+            border-radius: 8px;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--accent), rgba(0, 0, 0, 0));
+            margin: 40px 0;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .project {
+                padding: 20px;
+            }
+            
+            .project-links {
+                flex-direction: column;
+            }
+        }
+    </style><!--style and fonts used to custimize the website page-->
 </head>
-<body>
+<body><!--what is inside the website-->
     <h1>My Project Portfolio</h1>
     
     <div class="project">
         <h2>Project 1</h2>
-        <h3>Enhanced Calender App</h3>
+        <h3>Enhanced Calendar App</h3><!--down below is the description of the project-->
         <p>Project designed by Diyor Abduvaliev, Benjamin Smull, and Eric Lee. This Enhanced Calendar App project we worked on promotes
         a daily routine of jotting ones notes down in a certain place in order to remind one of the tasks they have left to complete. It helps
-        people who struggle with keeping everything down jotted on their head. Rather, they can quickly log in or register and instantly jot down the notes/note 
-        for the day or for next month or however long the person feels like. We got inspired to make this project throughout the school year realizing often
-        that we in fact did struggle with keeping each homework assignment written down in our brains. This is why we decided to create this app in order to
-        utilize and benefit ourselves and others facing through the same problem. The project itself took around 3-4 weeks, but then we also had to create 
-        a seperate slideshow(linked below) and even the portfolio website(linked on my github page). We believe that there are still vast 
-        improvements to be made, but are willing to share our code and development in order to inspire others to create something throughout the summer. 
-        In addition, for the Github Repository for GUI in HTML we got our code that we made in java and used AI in order to convert it to HTML and 
+        people who struggle with keeping everything down jotted on their head. Rather, they can quickly log in or register and instantly jot down the notes/note
+        for the day or for next month or however long the person feels like. 
+        We got inspired to make this project throughout the school year realizing often that we in fact did struggle with keeping each homework assignment written down in our brains. This is why we decided to create this app in order to
+        utilize and benefit ourselves and others facing through the same problem. The project itself took around 3-4 weeks, but then we also had to create
+        a seperate slideshow(linked below) and even the portfolio website(linked on my github page).
+        We believe that there are still vast improvements to be made, but are willing to share our code and development in order to inspire others to create something throughout the summer.
+        In addition, for the Github Repository for GUI in HTML we got our code that we made in java and used AI in order to convert it to HTML and
         generate a webbrowser that others can view(for accessbility) without having to copy our code in Intellij to actually run it. The HTML gui was just created in order
-        for others to see an example of how it looks through github, however our code that we also linked can be implemented through Intellij to give the same results. 
-        </p>
-      <a href="https://drive.google.com/drive/folders/1WmXP2KTJeclcj2kHBBOtnXS7Cw0wYydV?usp=sharing" target="_blank">
-        View Project (Screenshots)</a>  | 
-        <a href="https://github.com/Diyor52/Enhanced-Calendar-App-Code-">GitHub Repository For Code</a> | 
-         <a href="https://diyor52.github.io/Enhanced-Calendar-App-HTML-GUI-/">GitHub Repository for GUI in HTML</a> |
-          <a href=https://www.canva.com/design/DAGt6v9CYc4/RYavoNukYJgxmn_YirDXSw/edit?utm_content=DAGt6v9CYc4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton ">Canva Slide Link</a>
+        for others to see an example of how it looks through github, however our code that we also linked can be implemented through Intellij to give the same results.
+</p>
+        <!--all the links associated within the project-->
+        <div class="project-links">
+            <a href="https://drive.google.com/drive/folders/1WmXP2KTJeclcj2kHBBOtnXS7Cw0wYydV?usp=sharing" target="_blank">View Screenshots</a>
+            <a href="https://github.com/Diyor52/Enhanced-Calendar-App-Code-" target="_blank">GitHub Code</a>
+            <a href="https://diyor52.github.io/Enhanced-Calendar-App-HTML-GUI-/" target="_blank">HTML GUI Demo</a>
+            <a href="https://www.canva.com/design/DAGt6v9CYc4/RYavoNukYJgxmn_YirDXSw/edit?utm_content=DAGt6v9CYc4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Presentation Slides</a>
+        </div>
     </div>
     
-    
+    <hr>
+    <!--contact information for anyone needing it-->
     <footer>
-        <p>Contact me at: Diyor.nyc@gmail.com or Diyora2@nycstudents.net </p>
+        <p>Contact me at: <strong>Diyor.nyc@gmail.com</strong> or <strong>Diyora2@nycstudents.net</strong></p>
     </footer>
 </body>
 </html>
