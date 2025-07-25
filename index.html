@@ -1,16 +1,16 @@
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"><!--displays correctly with all symbols-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--displays correctly on all devices-->
     <title>My Projects</title><!--Title here-->
     <style>
         :root {
-            --primary: #4361ee;
-            --secondary: #3f37c9;
-            --accent: #4895ef;
-            --light: #f8f9fa;
+            --light_blue: #4361ee;
+            --darker_blue: #3f37c9;
+            --blue: #4895ef;
+            --white: #f8f9fa;
             --dark: #212529;
-            --success: #4cc9f0;
-            --warning: #f72585;
+            --cyan: #4cc9f0;
+            --pinkish_red: #f72585;
         }
         
         body {
@@ -18,14 +18,14 @@
             max-width: 900px;
             margin: 0 auto;
             padding: 30px;
-            background-color: var(--light);
-            color: var(--dark);
+            background-color: var(--cyan);
+            color: var(--pinkish_red);
             line-height: 1.6;
         }
         
         h1 {
             text-align: center;
-            color: var(--warning);
+            color: var(--pinkish_red);
             margin-bottom: 40px;
             font-size: 2.5rem;
             text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
@@ -33,7 +33,7 @@
         
         .project {
             background: white;
-            border-left: 5px solid var(--accent);
+            border-left: 5px solid var(--blue);
             padding: 30px;
             margin-bottom: 30px;
             border-radius: 8px;
@@ -47,23 +47,25 @@
         }
         
         .project p{
-            color: var(--primary);
+            color: var(--light_blue);
             font-weight: 350;
 
         }
         .project h2 {
-            color: var(--warning);
+            color: var(--red);
             margin-top: 0;
             font-size: 1.8rem;
-            border-bottom: 2px solid var(--accent);
+            border-bottom: 2px solid var(--blue);
             padding-bottom: 10px;
             display: inline-block;
         }
         
         .project h3 {
-            color: var(--secondary);
+            color: var(--darker_blue);
             margin-top: 5px;
             font-size: 1.4rem;
+            border-bottom: 2px solid var(--blue);
+           padding-bottom: 5px;
         }
         
         .project-links {
@@ -76,7 +78,7 @@
         .project-links a {
             display: inline-block;
             padding: 8px 15px;
-            background-color: var(--primary);
+            background-color: var(--light_blue);
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -85,13 +87,13 @@
         }
         
         .project-links a:hover {
-            background-color: var(--secondary);
+            background-color: var(--darker_blue);
             transform: translateY(-2px);
         }
         
-        .project-links a:nth-child(1) { background-color: var(--success); }
-        .project-links a:nth-child(2) { background-color: #6c757d; }
-        .project-links a:nth-child(3) { background-color: var(--warning); }
+        .project-links a:nth-child(1) { background-color: var(--cyan); }
+        .project-links a:nth-child(2) { background-color: #747c83; }
+        .project-links a:nth-child(3) { background-color: var(--pinkish_red); }
         .project-links a:nth-child(4) { background-color: #ff9f1c; }
         
         footer {
@@ -110,7 +112,7 @@
         hr {
             border: 0;
             height: 1px;
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--accent), rgba(0, 0, 0, 0));
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--blue), rgba(0, 0, 0, 0));
             margin: 40px 0;
         }
         
@@ -142,10 +144,10 @@
         We got inspired to make this project throughout the school year realizing often that we in fact did struggle with keeping each homework assignment written down in our brains. This is why we decided to create this app in order to
         utilize and benefit ourselves and others facing through the same problem. The project itself took around 3-4 weeks, but then we also had to create
         a seperate slideshow(linked below) and even the portfolio website(linked on my github page).
-        We believe that there are still vast improvements to be made, but are willing to share our code and development in order to inspire others to create something throughout the summer.
-        In addition, for the Github Repository for GUI in HTML we got our code that we made in java and used AI in order to convert it to HTML and
-        generate a webbrowser that others can view(for accessbility) without having to copy our code in Intellij to actually run it. The HTML gui was just created in order
-        for others to see an example of how it looks through github, however our code that we also linked can be implemented through Intellij to give the same results.
+        We believe that there are still vast improvements to be made, but are willing to share our code made in java and development in order to inspire others to create something throughout the summer.
+        In addition, for the Github Repository for GUI in HTML we got our code that we made in java and then with the assistance of AI we converted the original java code to HTML and
+        generate a webbrowser that others can view(for accessbility) without having to copy our code in Intellij to actually run it. We did this incase others did not have intellij to actually display the GUI through java. 
+        The HTML gui was just created in order for others to see an example of how it looks through github, however our code that we also linked can be implemented through Intellij to give the same results.
 </p>
         <!--all the links associated within the project-->
         <div class="project-links">
